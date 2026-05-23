@@ -54,34 +54,30 @@
   border-radius:20px;
 }
 .hotel{
-  display:grid;
-  grid-template-columns:160px 1fr;
-  gap:18px;
-  align-items:start;
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
 
-  background:white;
-  padding:12px;
-  border-radius:12px;
-  margin-bottom:18px;
+  margin-bottom:12px;
 }
 
 .hotel img{
-  width:160px;
-  height:110px;
+  width:150px;
+  height:95px;
   object-fit:cover;
-  border-radius:6px;
+  flex-shrink:0;
 }
 
 .hotel h3{
-  margin:0 0 8px;
-  font-size:20px;
-  line-height:1.3;
+  margin:0 0 4px;
+  font-size:18px;
+  line-height:1.2;
 }
 
 .hotel p{
-  margin:2px 0;
-  line-height:1.35;
-  font-size:16px;
+  margin:0;
+  font-size:15px;
+  line-height:1.25;
 }
 .footer{padding:34px 0;background:var(--navy);color:white;margin-top:40px}
 .footer a{color:#d8ecff}
