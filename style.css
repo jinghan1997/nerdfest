@@ -43,7 +43,17 @@
 .schedule-box{background:white;border:1px dashed var(--line);border-radius:22px;padding:30px}
 .table{width:100%;border-collapse:collapse;background:white;border-radius:18px;overflow:hidden}
 .table th,.table td{padding:14px;border-bottom:1px solid var(--line);text-align:left}
-.table th{background:#edf5ff;color:var(--navy)}.person-img{width:100%;border-radius:20px;border:1px solid var(--line);background:white}
+.table th{background:#edf5ff;color:var(--navy)}
+.person-img{
+  width:100%;
+  max-width:320px;
+  height:auto;
+  border-radius:20px;
+  border:1px solid var(--line);
+  background:white;
+  display:block;
+  margin:auto;
+}
 .hotel{display:grid;grid-template-columns:240px 1fr;gap:18px;align-items:start}.footer{padding:34px 0;background:var(--navy);color:white;margin-top:40px}
 .footer a{color:#d8ecff}
 .footer{
