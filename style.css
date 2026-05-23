@@ -54,9 +54,15 @@
   text-align:center;
 }
 
-.footer .container{
+.footer-grid{
+  width:100%;
   display:flex;
   justify-content:center;
+}
+
+.footer-grid > div{
+  display:flex;
+  flex-direction:column;
   align-items:center;
 }
 
