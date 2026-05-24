@@ -1,9 +1,7 @@
 # MRI NerdFest static website
-
-This is a clean, mobile-responsive static rebuild of the public Google Sites content for `mrinerdfest.org`.
+For portable MRI NerdFest event
 
 ## Files
-
 - `index.html`
 - `event-schedule.html`
 - `organizers.html`
@@ -14,17 +12,6 @@ This is a clean, mobile-responsive static rebuild of the public Google Sites con
 - `style.css`
 - `script.js`
 - `/images`
-
-## Important image note
-
-The layout and image slots are ready, but this environment could not directly download the original Google-hosted images from `lh3.googleusercontent.com`. The `/images` folder therefore contains named SVG placeholders.
-
-To preserve the original images:
-1. Open the original Google Site in a browser where the images load.
-2. Right-click each image and save it.
-3. Replace the corresponding SVG file in `/images`.
-4. Update the image filename in the HTML if you save it as `.png`, `.jpg`, or `.webp`.
-
 
 ## Custom domain
 To use `www.myowncustomdomain.org`:
