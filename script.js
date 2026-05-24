@@ -1,6 +1,19 @@
-const btn=document.querySelector('.menu-btn');
-const links=document.querySelector('.navlinks');
-if(btn&&links){btn.addEventListener('click',()=>links.classList.toggle('open'));}
+function setupMenuButton() {
+  const btn = document.querySelector(".menu-btn");
+  const links = document.querySelector(".navlinks");
+
+  if (!btn || !links) return;
+
+  btn.onclick = function () {
+    links.classList.toggle("open");
+  };
+}
+
+document.addEventListener("DOMContentLoaded", setupMenuButton);
+window.setupMenuButton = setupMenuButton;
+
+
+// Carousel
 const carouselImages = [
   "images/carousell/c1.png",
   "images/carousell/c2.png",
@@ -32,6 +45,9 @@ const carouselImages = [
 let currentSlide = 0;
 
 function moveSlide(direction) {
+  const carouselImage = document.getElementById("carousel-image");
+  if (!carouselImage) return;
+
   currentSlide += direction;
 
   if (currentSlide < 0) {
@@ -42,18 +58,5 @@ function moveSlide(direction) {
     currentSlide = 0;
   }
 
-  document.getElementById("carousel-image").src = carouselImages[currentSlide];
+  carouselImage.src = carouselImages[currentSlide];
 }
-
-function setupMenuButton() {
-  const menuBtn = document.querySelector(".menu-btn");
-  const navlinks = document.querySelector(".navlinks");
-
-  if (!menuBtn || !navlinks) return;
-
-  menuBtn.addEventListener("click", function () {
-    navlinks.classList.toggle("open");
-  });
-}
-
-document.addEventListener("DOMContentLoaded", setupMenuButton);
