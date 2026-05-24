@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Home | MRI NerdFest</title><meta name="description" content="MRI NerdFest static website"><link rel="stylesheet" href="style.css"></head><body>
 
-
+<div id="header"></div>
 
 <!--
 <header class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">MRI</span><span>MRI NerdFest</span></a><button class="menu-btn" type="button">Menu</button><nav class="navlinks"><a href="index.html">Home</a><a href="event-schedule.html">Event Schedule</a><a href="organizers.html">Organizers</a><a href="speakers-and-mentors.html">Speakers and Mentors</a><a href="venue-and-hotel.html">Venue and Hotel</a><a href="sponsorships.html">Sponsorships</a><a href="past-event.html">Past event</a></nav></div></header>
@@ -52,4 +52,15 @@ this is a comment
 -->
 
 
-<footer class="footer"><div class="container footer-grid"><div class="footer-content"><h2 style="margin:0 0 6px; font-size:30px;">Contact Us</h2><p style="margin:0 0 12px; font-size:20px;">Have questions? Reach out anytime.</p><a href="mailto:jinghan_heng@mymail.sutd.edu.sg"style="display:inline-block; background:#e63946; color:#fff; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:600;">📧 jinghan_heng@mymail.sutd.edu.sg</a></div></div></footer><script src="script.js"></script></body></html>
+<footer class="footer"><div class="container footer-grid"><div class="footer-content"><h2 style="margin:0 0 6px; font-size:30px;">Contact Us</h2><p style="margin:0 0 12px; font-size:20px;">Have questions? Reach out anytime.</p><a href="mailto:jinghan_heng@mymail.sutd.edu.sg"style="display:inline-block; background:#e63946; color:#fff; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:600;">📧 jinghan_heng@mymail.sutd.edu.sg</a></div></div></footer><script src="script.js"></script>
+<script>
+async function loadComponent(id, file) {
+  const response = await fetch(file);
+  const text = await response.text();
+  document.getElementById(id).innerHTML = text;
+}
+
+loadComponent("header", "header.html");
+
+</script>
+</body></html>
