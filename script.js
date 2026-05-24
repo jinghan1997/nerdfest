@@ -44,3 +44,16 @@ function moveSlide(direction) {
 
   document.getElementById("carousel-image").src = carouselImages[currentSlide];
 }
+
+function setupMenuButton() {
+  const menuBtn = document.querySelector(".menu-btn");
+  const navlinks = document.querySelector(".navlinks");
+
+  if (!menuBtn || !navlinks) return;
+
+  menuBtn.addEventListener("click", function () {
+    navlinks.classList.toggle("open");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", setupMenuButton);
