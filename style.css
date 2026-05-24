@@ -127,6 +127,37 @@
   height:auto;
   margin-left:14px;
 }
+.sponsor-contact-box{
+  background:#eaf4ff;
+
+  border-radius:22px;
+
+  padding:40px 30px;
+
+  text-align:center;
+
+  margin-top:40px;
+
+  border:1px solid var(--line);
+}
+
+.sponsor-contact-box h2{
+  margin:0 0 12px;
+
+  color:var(--navy);
+
+  font-size:34px;
+}
+
+.sponsor-contact-box p{
+  margin:0 0 24px;
+
+  color:#43536a;
+
+  font-size:18px;
+
+  line-height:1.5;
+}
 .carousel{
   position:relative;
   max-width:900px;
