@@ -26,7 +26,8 @@ const carouselImages = [
   "images/carousell/c22.png",
   "images/carousell/c23.png",
   "images/carousell/c24.png",
-  "images/carousell/c25.png"
+  "images/carousell/c25.png",
+  "images/carousell/c26.png"
 ];
 
 let currentSlide = 0;
