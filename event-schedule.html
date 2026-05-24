@@ -1,4 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Event Schedule | MRI NerdFest</title><meta name="description" content="MRI NerdFest static website"><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">MRI</span><span>MRI NerdFest</span></a><button class="menu-btn" type="button">Menu</button><nav class="navlinks"><a href="index.html">Home</a><a href="event-schedule.html">Event Schedule</a><a href="organizers.html">Organizers</a><a href="speakers-and-mentors.html">Speakers and Mentors</a><a href="venue-and-hotel.html">Venue and Hotel</a><a href="sponsorships.html">Sponsorships</a><a href="past-event.html">Past event</a></nav></div></header><main><section class="page-hero"><div class="container"><h1>Event schedule</h1><p class="lead">Tentative schedule</p></div></section><section class="section"><div class="container"><div class="schedule-grid"><div><table class="schedule-table"><tr>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Event Schedule | MRI NerdFest</title><meta name="description" content="MRI NerdFest static website"><link rel="stylesheet" href="style.css"></head><body>
+
+<div id="header"></div>
+
+<main><section class="page-hero"><div class="container"><h1>Event schedule</h1><p class="lead">Tentative schedule</p></div></section><section class="section"><div class="container"><div class="schedule-grid"><div><table class="schedule-table"><tr>
 
 
 <th colspan="2">Day 1 (20 Nov. 2026)</th></tr><tr><td class="time">8:00–8:30</td><td>Breakfast, posters &amp; networking</td></tr><tr><td class="time">8:30–9:00</td><td>Opening — Lecture: The commercialization of Portable and Accessible MRI (M. Rosen)</td></tr><tr><td class="time">9:35–10:10</td><td>Lecture: System &amp; Magnet (TBC)</td></tr><tr><td class="time">10:10–10:45</td><td>Lecture: AI at ultra-low field (Ed. Wu)</td></tr><tr><td class="time">10:45–11:20</td><td>Lecture: Console and sequences (TBC)</td></tr><tr><td class="time">11:20–11:55</td><td>Lecture: Introduction of each sub-system (S.Y. Huang)</td></tr><tr><td class="time">12:00–13:30</td><td>Team forming &amp; Lunch</td></tr><tr><td class="time">13:30–15:30</td><td>Instructions for each team</td></tr><tr><td class="time">15:30–16:00</td><td>Tea break</td></tr><tr><td class="time">16:00–16:35</td><td>Lecture: Gradient coils (S. Litti)</td></tr><tr><td class="time">16:35–17:10</td><td>Lecture: Portable MRI in Africa (TBD)</td></tr><tr><td class="time">17:10–17:45</td><td>Lecture: System integration (A. Webb)</td></tr><tr><td class="time">17:45–20:30</td><td>Dinner &amp; Networking</td></tr></table><table class="schedule-table"><tr>
@@ -24,4 +28,15 @@
 
 
 
-<footer class="footer"><div class="container footer-grid"><div class="footer-content"><h2 style="margin:0 0 6px; font-size:30px;">Contact Us</h2><p style="margin:0 0 12px; font-size:20px;">Have questions? Reach out anytime.</p><a href="mailto:jinghan_heng@mymail.sutd.edu.sg"style="display:inline-block; background:#e63946; color:#fff; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:600;">📧 jinghan_heng@mymail.sutd.edu.sg</a></div></div></footer><script src="script.js"></script></body></html>
+<footer class="footer"><div class="container footer-grid"><div class="footer-content"><h2 style="margin:0 0 6px; font-size:30px;">Contact Us</h2><p style="margin:0 0 12px; font-size:20px;">Have questions? Reach out anytime.</p><a href="mailto:jinghan_heng@mymail.sutd.edu.sg"style="display:inline-block; background:#e63946; color:#fff; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:600;">📧 jinghan_heng@mymail.sutd.edu.sg</a></div></div></footer><script src="script.js"></script>
+<script>
+async function loadComponent(id, file) {
+  const response = await fetch(file);
+  const text = await response.text();
+  document.getElementById(id).innerHTML = text;
+}
+
+loadComponent("header", "header.html");
+
+</script>
+</body></html>
