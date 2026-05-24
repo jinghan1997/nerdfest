@@ -127,6 +127,39 @@
   height:auto;
   margin-left:14px;
 }
+.carousel{
+  position:relative;
+  max-width:900px;
+  margin:30px auto;
+}
+
+.carousel img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+.carousel-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.5);
+  color:white;
+  border:none;
+  font-size:32px;
+  padding:10px 16px;
+  cursor:pointer;
+  border-radius:50%;
+}
+
+.prev{
+  left:15px;
+}
+
+.next{
+  right:15px;
+}
 .footer{padding:34px 0;background:var(--navy);color:white;margin-top:40px}
 .footer a{color:#d8ecff}
 .footer{
