@@ -79,6 +79,54 @@
   font-size:15px;
   line-height:1.25;
 }
+.paper-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:#dfeaf4;
+  border-radius:6px;
+
+  padding:10px 14px;
+  margin-top:20px;
+}
+
+.paper-text{
+  flex:1;
+}
+
+.paper-text h3{
+  margin:0 0 10px;
+  color:#0047ab;
+  font-size:18px;
+  font-weight:500;
+}
+
+.paper-text a{
+  display:block;
+
+  background:#d7e4ef;
+
+  padding:6px 10px;
+
+  border:1px solid #b9c9d8;
+
+  color:#0047ab;
+  text-decoration:none;
+
+  font-size:14px;
+  font-weight:600;
+}
+
+.paper-text a:hover{
+  background:#cddcea;
+}
+
+.paper-box img{
+  width:260px;
+  height:auto;
+  margin-left:14px;
+}
 .footer{padding:34px 0;background:var(--navy);color:white;margin-top:40px}
 .footer a{color:#d8ecff}
 .footer{
