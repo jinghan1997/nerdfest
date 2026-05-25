@@ -31,11 +31,11 @@
 
 
 <div class="carousel">
-  <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button type="button" class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous photo">&#10094;</button>
 
-  <img id="carousel-image" src="images/carousell/c1.png" alt="Hackathon photo">
+  <img id="carousel-image" src="images/carousell/c1.png" alt="Hackathon photo 1 of 25">
 
-  <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+  <button type="button" class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next photo">&#10095;</button>
 </div>
 
 
@@ -53,15 +53,6 @@
 <div id="footer"></div>
 <script src="script.js"></script>
 <script>
-async function loadComponent(id, file) {
-  const response = await fetch(file);
-  const text = await response.text();
-  document.getElementById(id).innerHTML = text;
-  if (id === "header") {
-    setupMenuButton();
-  }
-}
-
 loadComponent("header", "header.html");
 loadComponent("footer", "footer.html");
 </script>

@@ -14,12 +14,12 @@
 </h1>
 <p class="lead">A hands-on event to help people design, build, and improve portable MRI hardware while connecting engineers, researchers, mentors, and students.</p>
 <div class="meta">
-    📅 20–23 Nov 2026 <br>
-    📍 The Chinese University of Hong Kong (Shenzhen)
+    <p><span aria-hidden="true">📅</span> 20–23 Nov 2026</p>
+    <p><span aria-hidden="true">📍</span> The Chinese University of Hong Kong (Shenzhen)</p>
   </div>
-<div class="cta-row"><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe7nnWddVIEVfZEIBFwHisxw6TmbaWkdW4thf75lhj9IxlORw/viewform" target="_blank">Indicate your interest!</a>
+<div class="cta-row"><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe7nnWddVIEVfZEIBFwHisxw6TmbaWkdW4thf75lhj9IxlORw/viewform" target="_blank" rel="noopener noreferrer">Indicate your interest!</a>
 
-<a class="btn secondary" href="index.html">Registration will be opened at a later date</a></div></div>
+<span class="btn secondary is-disabled" aria-disabled="true">Registration will be opened at a later date</span></div></div>
 <!--
 -->
 <img class="hero-img" src="images/logo.png" alt="MRI Hardware AI event logo"></div></section>
@@ -50,15 +50,6 @@ this is a comment
 <div id="footer"></div>
 <script src="script.js"></script>
 <script>
-async function loadComponent(id, file) {
-  const response = await fetch(file);
-  const text = await response.text();
-  document.getElementById(id).innerHTML = text;
-  if (id === "header") {
-    setupMenuButton();
-  }
-}
-
 loadComponent("header", "header.html");
 loadComponent("footer", "footer.html");
 </script>

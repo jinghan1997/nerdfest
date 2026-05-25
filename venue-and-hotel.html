@@ -4,7 +4,9 @@
 <section class="section"><div class="container"><div class="card image-card"><h2>The Chinese University of Hong Kong (Shenzhen, China)</h2><img src="images/venue.png" alt="CUHK-Shenzhen campus"><p>A modern university in Shenzhen, also known as China Silicon Valley.</p></div></div></section>
 <section class="section"><div class="container"><h2>Getting Here</h2>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14724.450490387384!2d114.20856168786628!3d22.686851028000614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404769e8e03db83%3A0x72bee586ac015803!2sThe%20Chinese%20University%20of%20Hong%20Kong!5e0!3m2!1sen!2sus!4v1779567039904!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="map-embed">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14724.450490387384!2d114.20856168786628!3d22.686851028000614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404769e8e03db83%3A0x72bee586ac015803!2sThe%20Chinese%20University%20of%20Hong%20Kong!5e0!3m2!1sen!2sus!4v1779567039904!5m2!1sen!2sus" title="Map: The Chinese University of Hong Kong (Shenzhen)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 <div class="grid cols-2">
 <div class="card"><h3>From Shenzhen Baoan International Airport</h3><p>Take the airport shuttle bus 330B to Universiade Station. Then take bus B852 to Institute of Information Technology Station and walk 30m east to CUHK-Shenzhen.</p><p><strong>Duration:</strong> 1.5 hours</p></div>
@@ -95,15 +97,6 @@
 <div id="footer"></div>
 <script src="script.js"></script>
 <script>
-async function loadComponent(id, file) {
-  const response = await fetch(file);
-  const text = await response.text();
-  document.getElementById(id).innerHTML = text;
-  if (id === "header") {
-    setupMenuButton();
-  }
-}
-
 loadComponent("header", "header.html");
 loadComponent("footer", "footer.html");
 </script>

@@ -9,8 +9,43 @@ function setupMenuButton() {
   };
 }
 
+function getCurrentPage() {
+  const page = window.location.pathname.split("/").pop();
+  if (!page || page === "") return "index.html";
+  return page;
+}
+
+function setActiveNavLink() {
+  const page = getCurrentPage();
+
+  document.querySelectorAll(".navlinks a").forEach((link) => {
+    const href = link.getAttribute("href");
+    const isActive = href === page;
+
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+      link.classList.add("is-active");
+    } else {
+      link.removeAttribute("aria-current");
+      link.classList.remove("is-active");
+    }
+  });
+}
+
+async function loadComponent(id, file) {
+  const response = await fetch(file);
+  const text = await response.text();
+  document.getElementById(id).innerHTML = text;
+  if (id === "header") {
+    setupMenuButton();
+    setActiveNavLink();
+  }
+}
+
 document.addEventListener("DOMContentLoaded", setupMenuButton);
 window.setupMenuButton = setupMenuButton;
+window.setActiveNavLink = setActiveNavLink;
+window.loadComponent = loadComponent;
 
 
 // Carousel
@@ -59,4 +94,5 @@ function moveSlide(direction) {
   }
 
   carouselImage.src = carouselImages[currentSlide];
+  carouselImage.alt = `Hackathon photo ${currentSlide + 1} of ${carouselImages.length}`;
 }
