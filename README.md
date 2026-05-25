@@ -1,17 +1,6 @@
 # MRI NerdFest static website
 For portable MRI NerdFest event
 
-## Files
-- `index.html`
-- `event-schedule.html`
-- `organizers.html`
-- `speakers-and-mentors.html`
-- `venue-and-hotel.html`
-- `sponsorships.html`
-- `past-event.html`
-- `style.css`
-- `script.js`
-- `/images`
 
 ## Custom domain
 To use `www.myowncustomdomain.org`:
