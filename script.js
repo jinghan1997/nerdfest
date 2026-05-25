@@ -42,7 +42,27 @@ async function loadComponent(id, file) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", setupMenuButton);
+function resizeAdvisorImageCard() {
+  const frame = document.querySelector(".advisor-img-frame");
+  const img = frame && frame.querySelector("img");
+  if (!frame || !img) return;
+
+  const update = () => {
+    if (!img.naturalWidth) return;
+    const fullHeight = frame.clientWidth * (img.naturalHeight / img.naturalWidth);
+    frame.style.height = `${fullHeight / 3}px`;
+  };
+
+  if (img.complete) update();
+  else img.addEventListener("load", update, { once: true });
+
+  window.addEventListener("resize", update);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupMenuButton();
+  resizeAdvisorImageCard();
+});
 window.setupMenuButton = setupMenuButton;
 window.setActiveNavLink = setActiveNavLink;
 window.loadComponent = loadComponent;
