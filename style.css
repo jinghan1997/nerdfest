@@ -124,7 +124,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .advisor-card .advisor-img-frame{
   width:100%;
   aspect-ratio:calc(var(--advisor-img-w)/(var(--advisor-img-h)));
-  overflow:hidden;
+  overflow:shown;
   border-radius:16px;
 }
 .advisor-card .advisor-img-frame img{width:100%;height:auto;display:block;border-radius:0}
