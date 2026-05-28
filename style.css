@@ -178,6 +178,20 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   width:min(100%, 920px);
   margin:0 auto;
 }
+.sponsorship-gallery .image-card img.sponsors-img {
+  width: 60%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.sponsorship-gallery .image-card img.sponsorship-package-img {
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .sponsorship-gallery{
   justify-items:center;
   text-align:center;
