@@ -169,7 +169,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .stat strong{display:block;color:var(--navy);font-size:var(--text-stat);font-weight:var(--weight-extrabold);line-height:1}
 .stat span{display:block;color:var(--muted);font-size:var(--text-sm);line-height:var(--leading-snug)}
 .image-card{padding:0}
-.image-card img{width:100%;display:block;border-radius:12px;background:var(--card)}
+.image-card img{height: auto;display:block;border-radius:12px;background:var(--card);margin: 0 auto}
 .sponsorship-gallery .image-card img{
   width:min(100%, 920px);
   margin:0 auto;
@@ -384,6 +384,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .next{
   right:15px;
 }
+
 .footer{
   padding:34px 0;
   background:var(--navy);
