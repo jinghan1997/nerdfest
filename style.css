@@ -107,7 +107,11 @@ a:hover{text-decoration:underline}
 .hero{padding:var(--space-hero-top) 0 var(--space-hero-bottom);background:linear-gradient(135deg,var(--sky-hero) 0%,var(--card) 58%,var(--red-tint) 100%)}
 .home-hero{background:var(--section-header-bg)}
 .home-hero h1{background:var(--section-header-bg)}
-.home-hero .hero-img{border:0}
+.home-hero .hero-img{
+  border:0;
+  box-shadow:none;
+  background:transparent;
+}
 .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:36px;align-items:center}
 .eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--red);font-weight:var(--weight-extrabold);letter-spacing:.04em;text-transform:uppercase;font-size:var(--text-xs)}
 .hero h1{font-size:clamp(2.4rem,5vw,4.7rem);line-height:1.02;margin:.45rem 0;font-weight:var(--weight-extrabold)}
