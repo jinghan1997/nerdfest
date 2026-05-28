@@ -93,6 +93,10 @@ h2::before{
   height:calc(100% + 16px);
   background:var(--section-header-bg);
 }
+html,
+body {
+  overflow-x: hidden;
+}
 .text-red{color:var(--red)}
 .text-navy{color:var(--navy)}
 a{color:var(--blue);text-decoration:none}
