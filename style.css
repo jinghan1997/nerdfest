@@ -76,6 +76,23 @@ h1{
   text-align:center;
   background:var(--card);
 }
+h2{
+  position:relative;
+  z-index:0;
+  display:block;
+  text-align:center;
+}
+h2::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100vw;
+  height:calc(100% + 16px);
+  background:var(--section-header-bg);
+}
 .text-red{color:var(--red)}
 .text-navy{color:var(--navy)}
 a{color:var(--blue);text-decoration:none}
@@ -90,6 +107,7 @@ a:hover{text-decoration:underline}
 .hero{padding:var(--space-hero-top) 0 var(--space-hero-bottom);background:linear-gradient(135deg,var(--sky-hero) 0%,var(--card) 58%,var(--red-tint) 100%)}
 .home-hero{background:var(--section-header-bg)}
 .home-hero h1{background:var(--section-header-bg)}
+.home-hero .hero-img{border:0}
 .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:36px;align-items:center}
 .eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--red);font-weight:var(--weight-extrabold);letter-spacing:.04em;text-transform:uppercase;font-size:var(--text-xs)}
 .hero h1{font-size:clamp(2.4rem,5vw,4.7rem);line-height:1.02;margin:.45rem 0;font-weight:var(--weight-extrabold)}
@@ -124,6 +142,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .vision-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .vision-list > div{padding:0}
 .vision-list h3{margin:0 0 8px;color:var(--navy);font-size:clamp(1.05rem,1.9vw,1.25rem)}
+.offer-role .card{border:0}
 .card.image-card{
   background:transparent;
   border:0;
@@ -152,24 +171,6 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .page-hero{padding:var(--space-page-hero) 0;background:var(--card)}
 .page-hero h1{font-size:clamp(2.2rem,4vw,3.6rem);margin:0;color:var(--navy);font-weight:var(--weight-extrabold)}
 
-/* Full-width light-blue section title bars */
-.section > .container > h2,
-.section > .container > .section-title h2{
-  position:relative;
-  z-index:0;
-}
-.section > .container > h2::before,
-.section > .container > .section-title h2::before{
-  content:"";
-  position:absolute;
-  z-index:-1;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:100vw;
-  height:calc(100% + 16px);
-  background:var(--section-header-bg);
-}
 .schedule-box{background:var(--card);border:1px dashed var(--line);border-radius:22px;padding:30px}
 .table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden}
 .table th,.table td{padding:14px;border-bottom:1px solid var(--line);text-align:left}
@@ -303,12 +304,16 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 }
 .sponsor-interest .sponsor-contact-box{margin-top:0}
 .sponsor-contact-box{
-  background:var(--sky);
-  border-radius:22px;
+  background:var(--card);
+  border-radius:0;
   padding:40px 30px;
   text-align:center;
   margin-top:40px;
-  border:1px solid var(--line);
+  border:0;
+  width:100vw;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
 }
 .sponsor-contact-box h2{
   margin:0 0 12px;
