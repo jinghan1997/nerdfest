@@ -76,25 +76,29 @@ h1{
   text-align:center;
   background:var(--card);
 }
-h2{
-  position:relative;
-  z-index:0;
-  display:block;
-  text-align:center;
+h2 {
+  position: relative;
+  z-index: 0;
+  display: block;
+  text-align: center;
 }
-h2::before{
-  content:"";
-  position:absolute;
-  z-index:-1;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:100vw;
-  height:calc(100% + 16px);
-  background:var(--section-header-bg);
+
+h2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw - 40px);
+  max-width: 1120px;
+  height: calc(100% + 16px);
+  background: var(--section-header-bg);
 }
 html,
 body {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 .text-red{color:var(--red)}
@@ -176,8 +180,20 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 }
 .stat strong{display:block;color:var(--navy);font-size:var(--text-stat);font-weight:var(--weight-extrabold);line-height:1}
 .stat span{display:block;color:var(--muted);font-size:var(--text-sm);line-height:var(--leading-snug)}
-.image-card{padding:0}
-.image-card img{height: auto;display:block;border-radius:12px;background:var(--card);margin: 0 auto}
+.card.image-card,
+.image-card {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .sponsorship-gallery .image-card img{
   width:min(100%, 920px);
   margin:0 auto;
