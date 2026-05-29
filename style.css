@@ -164,6 +164,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 }
 .vision-section h3 {
   color: #8b0000;
+    font-size: 1.4rem;
 }
 .stats{grid-template-columns:repeat(6,1fr)}
 .stat{
