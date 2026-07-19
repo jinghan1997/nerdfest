@@ -1,123 +1,326 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Home | MRI NerdFest</title><meta name="description" content="MRI NerdFest static website"><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="../">
+  <title>Home Suggestion | MRI NerdFest</title>
+  <meta name="description" content="Suggested homepage integration for MRI NerdFest">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .how-section {
+      background: var(--card);
+    }
+
+    .how-kicker {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+
+    .how-flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .how-step {
+      min-height: 174px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--sky-panel);
+    }
+
+    .how-step-number {
+      display: inline-grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--card);
+      font-weight: var(--weight-extrabold);
+      line-height: 1;
+    }
+
+    .how-step h3,
+    .track-card h3,
+    .theme-example h3 {
+      margin: 14px 0 8px;
+      color: var(--navy);
+      font-size: var(--text-xl);
+      line-height: var(--leading-tight);
+    }
+
+    .how-step p,
+    .track-card p,
+    .theme-example p {
+      margin: 0;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .track-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .track-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      background: var(--card);
+      box-shadow: 0 2px 10px var(--shadow-navy-soft);
+    }
+
+    .track-label {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--red-tint);
+      color: var(--red-dark);
+      font-size: var(--text-xs);
+      font-weight: var(--weight-extrabold);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .track-card .list {
+      margin-top: 14px;
+      color: var(--text-secondary);
+    }
+
+    .theme-example {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 24px;
+      align-items: center;
+      margin-top: 28px;
+      padding: 24px;
+      border-radius: 8px;
+      background: var(--navy);
+      color: var(--card);
+    }
+
+    .theme-example h3,
+    .theme-example p,
+    .theme-example .list {
+      color: var(--card);
+    }
+
+    .theme-example .list {
+      margin-top: 10px;
+    }
+
+    .theme-example strong {
+      color: var(--red-tint);
+    }
+
+    @media (max-width: 920px) {
+      .how-flow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .theme-example {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .how-flow,
+      .track-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .how-step {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
 
 <div id="header"></div>
 
 <main>
-
-
-
-
-<section class="hero home-hero"><div class="container hero-grid"><div><span class="eyebrow">Seminars & Hackathon</span>
-<h1>
-  <span class="text-red">portableMRI</span>
-  <span class="text-navy">NerdFest-2</span>
-</h1>
-<p class="lead">A hands-on event to help people design, build, and improve portable MRI hardware while connecting engineers, researchers, mentors, and students.</p>
-<div class="meta">
-    <p><span aria-hidden="true">📅</span> 20–23 Nov 2026</p>
-    <p><span aria-hidden="true">📍</span> The Chinese University of Hong Kong (Shenzhen)</p>
-  </div>
-  <!--
-<div class="cta-row"><a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe7nnWddVIEVfZEIBFwHisxw6TmbaWkdW4thf75lhj9IxlORw/viewform" target="_blank" rel="noopener noreferrer">Indicate your interest!</a>
-
-<span class="btn secondary is-disabled" aria-disabled="true">Registration will be opened at a later date</span></div></div>
-
--->
-
-
-<div class="cta-row"><a class="btn primary" href="https://tinyurl.com/mrinerdfest-registration-v2" target="_blank" rel="noopener noreferrer">Registration opened</a>
-
-<span class="btn secondary is-disabled" aria-disabled="true">Sign up now!</span></div></div>
-
-
-<img class="hero-img" src="images/logo.png" alt="MRI Hardware AI event logo"></div></section>
-
-<section class="section"><div class="container grid cols-2 home-gallery"><img src="images/home_img1.jpg" alt="Audience attending seminar"><img src="images/home_img2.jpg" alt="Hands-on lab workshop"></div></section>
-
-
-
-
-
-
-
-
-<section class="section vision-section">
-  <div class="container">
-    <h2>Visions</h2>
-
-    <div class="vision-list">
+  <section class="hero home-hero">
+    <div class="container hero-grid">
       <div>
-        <h3>Hardware training</h3>
-        <ul class="list">
-          <li>Train people to design and build MRI hardware — not just theories.</li>
-          <li>Brainstorm strategies for portable MRI challenges.</li>
-        </ul>
+        <span class="eyebrow">Seminars &amp; Hackathon</span>
+        <h1>
+          <span class="text-red">portableMRI</span>
+          <span class="text-navy">NerdFest-2</span>
+        </h1>
+        <p class="lead">A hands-on event to help people design, build, and improve portable MRI hardware while connecting engineers, researchers, mentors, and students.</p>
+        <div class="meta">
+          <p><span aria-hidden="true">Calendar:</span> 20-23 Nov 2026</p>
+          <p><span aria-hidden="true">Location:</span> The Chinese University of Hong Kong (Shenzhen)</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="https://tinyurl.com/mrinerdfest-registration-v2" target="_blank" rel="noopener noreferrer">Registration opened</a>
+          <span class="btn secondary is-disabled" aria-disabled="true">Sign up now!</span>
+        </div>
       </div>
 
-      <div>
-        <h3>Access & impact</h3>
-        <ul class="list">
-          <li>Promote portable MRI for resource-limited and/or point-of-care settings.</li>
-          <li>Enhance MRI accessibility by lowering barriers worldwide.</li>
-        </ul>
-      </div>
+      <img class="hero-img" src="images/logo.png" alt="MRI Hardware AI event logo">
+    </div>
+  </section>
 
-      <div>
-        <h3>Global community</h3>
-        <ul class="list">
-          <li>Build a global community of engineers and researchers who share the same vision.</li>
-        </ul>
+  <section class="section">
+    <div class="container grid cols-2 home-gallery">
+      <img src="images/home_img1.jpg" alt="Audience attending seminar">
+      <img src="images/home_img2.jpg" alt="Hands-on lab workshop">
+    </div>
+  </section>
+
+  <section class="section vision-section">
+    <div class="container">
+      <h2>Visions</h2>
+
+      <div class="vision-list">
+        <div>
+          <h3>Hardware training</h3>
+          <ul class="list">
+            <li>Train people to design and build MRI hardware, not just theories.</li>
+            <li>Brainstorm strategies for portable MRI challenges.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Access &amp; impact</h3>
+          <ul class="list">
+            <li>Promote portable MRI for resource-limited and/or point-of-care settings.</li>
+            <li>Enhance MRI accessibility by lowering barriers worldwide.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Global community</h3>
+          <ul class="list">
+            <li>Build a global community of engineers and researchers who share the same vision.</li>
+          </ul>
+        </div>
       </div>
     </div>
+  </section>
+
+  <div class="container grid cols-2 offer-role vision-section">
+    <div class="card">
+      <h3>We offer</h3>
+      <ul class="list">
+        <li>Expert seminars, training, workshops, and poster exhibitions.</li>
+        <li>Mentorship from world-class experts and hardware specialists.</li>
+        <li>Lab access, equipment, tools, and workspace for your team.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Your role</h3>
+      <ul class="list">
+        <li>Learn</li>
+        <li>Form or join a team</li>
+        <li>Contribute to a working MRI scanner</li>
+      </ul>
+    </div>
   </div>
-</section>
 
-<div class="container grid cols-2 offer-role vision-section">
-  <div class="card">
-    <h3>We offer</h3>
-    <ul class="list">
-      <li>Expert seminars — training, workshops, and poster exhibitions.</li>
-      <li>Mentorship from world-class experts and hardware specialists.</li>
-      <li>Lab access — equipment, tools, and workspace for your team.</li>
-    </ul>
-  </div>
+  <section class="section">
+    <div class="container">
+      <h2>Themes</h2>
+      <p class="lead">Building together, solving a big picture. Each team focuses on a critical subsystem. Together, all combine to form a complete portable MRI.</p>
+      <div class="home-gallery">
+        <img src="images/teams.png" alt="MRI NerdFest teams and themes">
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Your role</h3>
-    <ul class="list">
-      <li>Learn</li>
-      <li>Form or join a team</li>
-      <li>Contribute to a working MRI scanner</li>
-    </ul>
-  </div>
-</div>
+  <section class="section how-section" id="how-it-works">
+    <div class="container">
+      <div class="how-kicker">
+        <h2>How Does It Work?</h2>
+        <p class="lead">portableMRI NerdFest-2 is built around eight technical themes, each representing a key subsystem of an open-source portable MRI system. Participants join a theme, work in small teams, and contribute toward a final integrated demonstration.</p>
+      </div>
 
+      <div class="how-flow" aria-label="How MRI NerdFest works">
+        <div class="how-step">
+          <span class="how-step-number">1</span>
+          <h3>Choose a theme</h3>
+          <p>Participants state their preferred technical themes. Assignments prioritize first choices, then second choices, while keeping team sizes balanced.</p>
+        </div>
 
+        <div class="how-step">
+          <span class="how-step-number">2</span>
+          <h3>Join a track</h3>
+          <p>Each theme has Beginner and Advanced tracks, matched to participants' background, confidence, and prior MRI or engineering experience.</p>
+        </div>
 
+        <div class="how-step">
+          <span class="how-step-number">3</span>
+          <h3>Build in teams</h3>
+          <p>Each track may contain multiple teams of about five participants. Teams stay within their theme throughout the event.</p>
+        </div>
 
+        <div class="how-step">
+          <span class="how-step-number">4</span>
+          <h3>Integrate the system</h3>
+          <p>Teams develop, test, and validate their subsystem so it can connect with the other themes for the Day 4 system demonstration.</p>
+        </div>
+      </div>
 
+      <div class="track-grid">
+        <article class="track-card">
+          <span class="track-label">Foundation path</span>
+          <h3>Beginner Track</h3>
+          <p>Designed for participants who are new to MRI or want a stronger foundation in a specific technical area.</p>
+          <ul class="list">
+            <li>Lectures and guided tutorials</li>
+            <li>Hands-on practical exercises</li>
+            <li>Core concepts, tools, and essential skills</li>
+          </ul>
+        </article>
 
+        <article class="track-card">
+          <span class="track-label">Challenge path</span>
+          <h3>Advanced Track</h3>
+          <p>Designed for participants with relevant knowledge or experience who want to work directly on harder engineering problems.</p>
+          <ul class="list">
+            <li>Subsystem design, optimization, construction, and testing</li>
+            <li>Open-source improvements and new technical ideas</li>
+            <li>Close collaboration with mentors and integration teams</li>
+          </ul>
+        </article>
+      </div>
 
+      <aside class="theme-example">
+        <div>
+          <span class="eyebrow">Theme example</span>
+          <h3>From learning to a working subsystem</h3>
+        </div>
+        <div>
+          <p><strong>Console teams</strong> develop, implement, and test open-source MRI console hardware and software so the console can control the MRI system and interface correctly with other subsystems.</p>
+          <p><strong>Magnets &amp; Shimming teams</strong> may explore permanent magnet arrays, magnet properties, simulation tools, introductory magnet design, and basic shimming techniques.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
 
-
-
-
-<section class="section"><div class="container"><h2>Themes</h2><p class="lead">Building together, solving a big picture. Each team focuses on a critical subsystem. Together, all combine to form a complete portable MRI.</p><div class="home-gallery"><img src="images/teams.png" alt="MRI NerdFest teams and themes"></div></div></section>
-
-<section class="section"><div class="container grid stats">
-<div class="stat"><strong>5</strong><span>Members per team</span></div>
-<div class="stat"><strong>2</strong><span>Categories (Beginners and Experienced)</span></div>
-<div class="stat"><strong>200</strong><span>Participants (4 days)</span></div>
-<div class="stat"><strong>300</strong><span>Day 1 attendees</span></div><div class="stat"><strong>15</strong><span>Mentors</span></div>
-<div class="stat"><strong>15</strong><span>Facilitators</span></div></div></section>
-
-
+  <section class="section">
+    <div class="container grid stats">
+      <div class="stat"><strong>5</strong><span>Members per team</span></div>
+      <div class="stat"><strong>2</strong><span>Categories (Beginners and Experienced)</span></div>
+      <div class="stat"><strong>200</strong><span>Participants (4 days)</span></div>
+      <div class="stat"><strong>300</strong><span>Day 1 attendees</span></div>
+      <div class="stat"><strong>15</strong><span>Mentors</span></div>
+      <div class="stat"><strong>15</strong><span>Facilitators</span></div>
+    </div>
+  </section>
 </main>
-
-<!--
-this is a comment
--->
-
 
 <div id="footer"></div>
 <script src="script.js"></script>
@@ -125,4 +328,5 @@ this is a comment
 loadComponent("header", "header.html");
 loadComponent("footer", "footer.html");
 </script>
-</body></html>
+</body>
+</html>
