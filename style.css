@@ -218,6 +218,18 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .page-hero{padding:var(--space-page-hero) 0;background:var(--card)}
 .page-hero h1{font-size:clamp(2.2rem,4vw,3.6rem);margin:0;color:var(--navy);font-weight:var(--weight-extrabold)}
 
+.syllabus-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  align-items:start;
+}
+.syllabus-gallery img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
 .schedule-box{background:var(--card);border:1px dashed var(--line);border-radius:22px;padding:30px}
 .table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden}
 .table th,.table td{padding:14px;border-bottom:1px solid var(--line);text-align:left}
@@ -455,3 +467,7 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
 .schedule-table tr:nth-child(even) td{background:var(--sky-stat)}
 .schedule-table .time{width:140px;font-weight:var(--weight-extrabold);color:var(--text);white-space:nowrap}
 @media(max-width:850px){.schedule-grid{grid-template-columns:1fr;gap:20px}.schedule-table .time{width:115px}.carousel img{height:280px}}
+
+@media(max-width:650px){
+  .syllabus-gallery{grid-template-columns:1fr}
+}
