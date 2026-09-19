@@ -237,6 +237,30 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   height:auto;
   margin:0 auto;
 }
+.student-grant-content{
+  width:100%;
+  max-width:800px;
+  margin:44px auto 0;
+}
+.student-grant-content h1{
+  margin:0 0 20px;
+  color:var(--navy);
+  background:transparent;
+  font-size:clamp(1.8rem,3vw,2.5rem);
+  line-height:var(--leading-tight);
+}
+.student-grant-content section{margin-top:30px}
+.student-grant-content h2{
+  margin:0 0 10px;
+  color:var(--navy);
+  font-size:clamp(1.25rem,2.2vw,1.55rem);
+  text-align:left;
+}
+.student-grant-content h2::before{content:none}
+.student-grant-content p{margin:0 0 12px}
+.student-grant-content ul,
+.student-grant-content ol{margin:0;padding-left:24px}
+.student-grant-content li+li{margin-top:8px}
 
 .schedule-box{background:var(--card);border:1px dashed var(--line);border-radius:22px;padding:30px}
 .table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden}
