@@ -220,13 +220,6 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   border-bottom:1px solid var(--line);
 }
 .tool-logo-wrap-dark{background:var(--navy)}
-.tool-logo-wrap-magtetris{
-  position:relative;
-  height:96px;
-  padding:0;
-  overflow:hidden;
-  background:#000;
-}
 .tool-logo{
   display:block;
   width:auto;
@@ -249,13 +242,8 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   height:32px;
 }
 .tool-logo-magtetris{
-  position:absolute;
-  top:72%;
-  left:50%;
-  width:720px;
-  max-width:none;
+  width:min(100%,220px);
   height:auto;
-  transform:translate(-50%,-50%);
 }
 .tool-card-body{
   display:flex;
@@ -634,7 +622,6 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   .syllabus-gallery{grid-template-columns:1fr}
   .tools-grid{grid-template-columns:1fr}
   .tool-logo-wrap{min-height:88px}
-  .tool-logo-wrap-magtetris{height:88px}
 }
 
 @media(min-width:851px) and (max-width:1050px){
