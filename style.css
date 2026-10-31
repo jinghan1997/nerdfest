@@ -245,6 +245,10 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   width:min(100%,220px);
   height:auto;
 }
+.tool-logo-coilgen{
+  width:min(100%,190px);
+  height:auto;
+}
 .tool-card-body{
   display:flex;
   flex:1;
