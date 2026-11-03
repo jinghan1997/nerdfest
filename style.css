@@ -357,9 +357,14 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   color:var(--text-secondary);
   line-height:var(--leading-normal);
   overflow-wrap:anywhere;
+  text-align:center;
 }
-.syllabus-link strong{color:var(--navy)}
+.syllabus-link strong{
+  display:block;
+  color:var(--navy);
+}
 .syllabus-link a{
+  display:block;
   color:var(--blue);
   font-weight:var(--weight-bold);
 }
