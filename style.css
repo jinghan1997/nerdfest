@@ -351,6 +351,18 @@ a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--
   width:100%;
   height:auto;
 }
+.syllabus-item{min-width:0}
+.syllabus-link{
+  margin:14px 0 0;
+  color:var(--text-secondary);
+  line-height:var(--leading-normal);
+  overflow-wrap:anywhere;
+}
+.syllabus-link strong{color:var(--navy)}
+.syllabus-link a{
+  color:var(--blue);
+  font-weight:var(--weight-bold);
+}
 
 .student-grant-image{
   display:block;
