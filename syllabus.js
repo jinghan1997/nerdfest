@@ -2,7 +2,7 @@ const syllabusImages = [
   {
     src: "images/magnet_syllabus.jpg",
     alt: "Magnet syllabus",
-    website: "https://mri-nerdfeast.thosli611.chatgpt.site/"
+    website: "https://lithos666.github.io/MRI-NerdFest2/"
   }
 ];
 
